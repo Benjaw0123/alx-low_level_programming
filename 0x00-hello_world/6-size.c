@@ -5,16 +5,10 @@
  */
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float f;
-
-printf("size of char: %lu 1 byte(s)\n", (unsigned long)sizeof(a));
-printf("Size of an int: %lu 4 byte(s)\n", (unsigned long)sizeof(b));
-printf("size of a long int: %lu 8 byte(s)\n", (unsigned long)sizeof(c));
-printf("size of a long long int: %lu 8 byte(s)\n", (unsigned long)sizeof(d));
-printf("size of a float: %lu 4 byte(s)\n", (unsigned long)sizeof(f));
-return (0);
+printf("size of char: %ld byte(s)\n", sizeof(char));
+printf("Size of an int: %ld byte(s)\n", sizeof(int));
+printf("size of a long int: %ld byte(s)\n", sizeof(long int));
+printf("size of a long long int: %ld byte(s)\n", sizeof(long long int));
+printf("size of a float: %ld byte(s)\n", sizeof(float));
+return (0); /* Add parentheses around the expression */
 }

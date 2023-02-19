@@ -1,20 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 /**
-  * main - returns alphabets
-  *
-  * Return: Always 0
-  *
-  */
+ *main - Entery point
+ *Description:Print alphabet in lowercase,followed by a new line
+ *Return: Always 0
+*/
 int main(void)
 {
 	int ch = 'z';
 
-	while (ch <= 'a')
+	while (ch >= 'a')
 	{
-		putchar(ch);
-		ch--;
+	putchar(ch);
+	ch--;
 	}
 	putchar('\n');
+
 	return (0);
 }

@@ -1,13 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: Prints the sum of even-valued
- *		Fibonacci sequence not exceed
- *		4million
- *
- * Return: Always 0 (Succes
+ * main - Prints he sum of even fibonacci numbers
+ * less than 4000000
+ * Return: Nothing
  */
 
 int main(void)

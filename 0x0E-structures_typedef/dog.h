@@ -2,23 +2,33 @@
 #define DOG_H
 
 /*
- * main - Define a new type named struct dog with elemnts below
+ * struct dog - named with elemnts below
  * @name: first member
  * @age: second member
  * @owner: third member
  *
- * Return: 0
+ * Description: defining a new type named Struct dog.
  */
-struct Dog
+struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
 
-int main(void)
-{
-	struct Dog dog;
+/**
+ *my_dog - a typedef for struct dog
+ *
+ * Return: 0
+*/
+typedef struct dog my_dog;
 
-	return (0);
-}
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+my_dog *new_dog(char *name, float age, char *owner);
+void free_dog(my_dog *d);
+char *_strcpy(char *dest, char *src);
+int _strlen(char *s);
+
+#endif
+

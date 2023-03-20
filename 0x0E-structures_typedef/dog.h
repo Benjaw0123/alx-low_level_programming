@@ -3,9 +3,9 @@
 
 /*
  * main - Define a new type named struct dog with elemnts below
- * @name: first element
- * @age: second element
- * @owner: third element
+ * @name: first member
+ * @age: second member
+ * @owner: third member
  *
  * Return: 0
  */

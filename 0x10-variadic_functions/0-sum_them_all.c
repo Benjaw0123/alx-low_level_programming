@@ -17,12 +17,9 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(sum_them_all, n);
 
-	if (n > 0)
+	for (position = 0; position < n; position++)
 	{
-		for (position = 0; position < n; position++)
-		{
-			sum += va_arg(sum_them_all, int);
-		}
+		sum += va_arg(sum_them_all, int);
 	}
 
 	va_end(sum_them_all);
